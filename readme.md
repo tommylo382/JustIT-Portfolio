@@ -1,11 +1,11 @@
-1. Install Visual Studio Code from https://code.visualstudio.com/
-    1.1 Install the Live Server extension from the extensions tab in Visual Studio Code
+1. Install Visual Studio Code from https://code.visualstudio.com/<br>
+    1.1 Install the Live Server extension from the extensions tab in Visual Studio Code<br>
     1.2 Install the Python extension from the extensions tab in Visual Studio Code
 3. Install Python from https://www.python.org/
-4. Install MySQL from https://dev.mysql.com/downloads/mysql/
+4. Install MySQL from https://dev.mysql.com/downloads/mysql/<br>
     3.1 When installing MySQL set the root password to "Pa$$w0rd"
-5. Install MySQL Workbench from https://dev.mysql.com/downloads/workbench/
-    4.1 Add a new connection by clicking the + button in the MySQL Connections section
+5. Install MySQL Workbench from https://dev.mysql.com/downloads/workbench/<br>
+    4.1 Add a new connection by clicking the + button in the MySQL Connections section<br>
     4.2 Set up the connection with Connection Name: portfolio, Hostname: Enter 127.0.0.1, Port: 3306, Username: root, and Password: Pa$$w0rd
 6. Open the setup.sql in the sql folder using MySQL Workbench and excute it by pressing Controlle + Shift + Enter
 7. Install Flask by opening a terminal in Visual Studio Code and type
