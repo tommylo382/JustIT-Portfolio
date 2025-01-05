@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "js/script.js"></script>
+</head>
+<body onload="onLoad()"> 
+    <h1>Hello, World!</h1> 
+    <p id="text">This is an interactive webpage with multiple JavaScript features.</p>
+
+    <!-- Buttons for different interactions -->
+    <button id="change-bg">Change Background</button>
+    <button id="change-text">Add Text</button>
+    <button id="change-color">Change Colour</button>
+
+    <!-- New buttons and inputs for Activity 2 -->
+    <button id="randomBgButton">Random Background Color</button>
+    <input type="color" id="textColorPicker" value="#000000">
+    <button id="toggleTextButton">Toggle Text Visibility</button>
+    <button id="increaseFontButton">Increase Font Size</button>
+    <button id="decreaseFontButton">Decrease Font Size</button>
+    <button id="resetButton">Reset</button>
+
+    <!-- Add your interactive element here -->
+    <div id="interactiveDiv" style="width: 200px; height: 200px; background-color: lightgray;">
+        Hover over me!
+    </div>
+
+    <!-- Container with buttons for event delegation -->
+    <div id="button-container">
+        <button class="delegated-button">Button 1</button>
+        <button class="delegated-button">Button 2</button>
+        <button class="delegated-button">Button 3</button>
+    </div>
+</body>
+</html>

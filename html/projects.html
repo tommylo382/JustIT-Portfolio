@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel = "stylesheet" href = "../css/style.css" />
+    <script src = "../js/general.js"></script>
+    <script src = "../js/projects.js"></script>
+</head>
+<body onload = "onLoad()">
+    <div id = "navbar">
+        <button id = "nav-menu" onclick = "menu()"></button>
+        <button id = "nav-side" onclick = "menu()"></button>
+        
+        <nav>
+            <a class = "nav-item" onclick = "nav('home', event)" href = "#home"><span>Home</span></a>
+            <a class = "nav-item" onclick = "nav('aboutme', event)" href = "#aboutme"><span>About me</span></a>
+            <a class = "nav-item" onclick = "nav('skills', event)" href = "#skills"><span>Skills</span></a>
+            <a class = "nav-item" onclick = "nav('projects', event)" href = "#projects"><span>Projects</span></a>
+            <a class = "nav-item" onclick = "nav('contact', event)" href = "#contact"><span>Contact me</span></a>
+        </nav>
+    </div>
+
+    <div id = "content">        
+        <section id = "projects">
+            <h1></h1>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tommy Lo. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

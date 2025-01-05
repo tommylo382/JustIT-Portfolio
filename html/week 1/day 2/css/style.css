@@ -1,0 +1,24 @@
+h1 {
+    color: red;
+}
+
+p {
+    color:blue;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+}
+
+img {
+    width: 50%;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+#highlight {
+    background-color: yellowgreen;
+}

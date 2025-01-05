@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tommy Lo's portfolio</title>
+        <link rel = "stylesheet" href = "../css/style.css" />
+        <script src = "../js/general.js"></script>
+        <script src = "../js/index.js"></script>
+    </head>
+    <body onload = "onLoad()">
+        <div id = "navbar">
+            <button id = "nav-menu" onclick = "menu()"></button>
+            <button id = "nav-side" onclick = "menu()"></button>
+
+            <nav>
+                <a class = "nav-item" onclick = "nav('home', event)" href = "#home"><span>Home</span></a>
+                <a class = "nav-item" onclick = "nav('aboutme', event)" href = "#aboutme"><span>About me</span></a>
+                <a class = "nav-item" onclick = "nav('skills', event)" href = "#skills"><span>Skills</span></a>
+                <a class = "nav-item" onclick = "nav('projects', event)" href = "#projects"><span>Projects</span></a>
+                <a class = "nav-item" onclick = "nav('contact', event)" href = "#contact"><span>Contact me</span></a>
+            </nav>
+        </div>
+
+        <div id = "content">
+            <header id = "home">
+                <video autoplay muted loop id="header-background">
+                    <source src = "../media/video/Solar_System.mp4"  type = "video/mp4" />
+                </video>
+
+                <div class = "text">
+                    <h1>Lo Cheuk Man (Tommy)</h1>
+                    <p>Web and Software Developer</p>
+                </div>
+            </header>
+            
+            <section id = "aboutme">
+                <h2>About me</h2>
+
+                <div class = "text">
+                    <p>Hi, my name is Lo Cheuk Man, you can also call me Tommy. I am a web and software developer based in Bath, UK and love to write different custom CSS for website that I use.</p>
+                    <p>I have uploaded several projects on my <a href = "https://github.com/tommylo382" target = "_blank">GitHub</a> and if you want to know more about me, you can go to my <a href = "https://www.linkedin.com/in/cheuk-man-lo-959933333/" target = "_blank">LinkedIn</a> page.</p>
+                    <p><a href = "../media/CV.docx" target = "_blank">My CV</a></p>
+                </div>
+            </section>
+            
+            <section id = "skills">
+                <h2>Skills</h2>
+            </section>
+            
+            <section id = "projects">
+                <h2>Projects</h2>
+            </section>
+            
+            <section id = "contact">
+                <h2>Contact me</h2>
+                
+                <form id = "contact-form" onsubmit = "contactForm(event)">
+                    <input type = "text" id = "name" name = "name" placeholder = "Your Name" required />
+                    <input type = "email" id = "email" name = "email" placeholder = "Your Email" required />
+                    <textarea id = "message" name = "message" rows = "10" cols = "50" placeholder = "Your Message" required></textarea>
+                    <input type = "submit" value = "Submit" />
+                    <input type = "reset" value = "Reset" />
+                </form>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Tommy Lo. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>

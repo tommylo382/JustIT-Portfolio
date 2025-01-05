@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin portal</title>
+    <link rel = "stylesheet" href = "../css/style.css" />
+    <script src = "../js/general.js"></script>
+    <script src = "../js/admin.js"></script>
+</head>
+<body onload = "onLoad()">
+    <div id = "navbar" class = "admin-navbar">
+        <p class = "title">Admin Portal</p>
+
+        <nav>
+            <a class = "nav-item" onclick = "logOut()"><span>Log Out</span></a>
+        </nav>
+    </div>
+
+    <div id = "content">
+        <section id = "login">
+            <h2>Login</h2>
+
+            <form id = "login-form" onsubmit = "logIn(event)">
+                <input type = "text" id = "username" name = "username" placeholder = "User Name" required />
+                <input type = "password" id = "password" name = "password" placeholder = "Password" required />
+                <input type = "submit" value = "Log In" />
+            </form>
+        </section>
+        
+        <section id = "messages">
+            <h2>Messages</h2>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tommy Lo. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
