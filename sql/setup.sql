@@ -87,7 +87,3 @@ INSERT INTO project_days VALUES ("day 5", "week 9");
 INSERT INTO messages(name, email, message, send_time) VALUES ("name1", "name1@gmail.com", "sample message", "2024-12-01 07:26:00");
 INSERT INTO messages(name, email, message, send_time) VALUES ("name2", "name2@gmail.com", "sample message", "2024-12-02 07:26:00");
 INSERT INTO messages(name, email, message, send_time) VALUES ("name3", "name3@gmail.com", "sample message", "2024-12-03 07:26:00");
-
-select * from users;
-select * from messages order by send_time desc;
-select * from project_days;
