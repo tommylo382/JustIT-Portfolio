@@ -1,6 +1,6 @@
 // open and close mobile menu
 function menu() {
-    var element = document.getElementsByTagName("nav")[0];
+    let element = document.getElementsByTagName("nav")[0];
 
     if (element.style.display != "flex") {
         element.style.display = "flex";

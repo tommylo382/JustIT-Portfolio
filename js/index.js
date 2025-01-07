@@ -78,7 +78,7 @@ async function contactForm(event) {
     url = "http://127.0.0.1:5000/api?function=add-message";
     
     // get values from form
-    for(var element of event.srcElement) {
+    for(let element of event.srcElement) {
         console.log(element);
         if(element.type != "submit" && element.type != "reset") {
             console.log(element.type);

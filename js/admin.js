@@ -1,5 +1,5 @@
-var element = null;
-var url = ""
+let element = null;
+let url = ""
 
 // page load
 function onLoad() {
@@ -25,7 +25,7 @@ async function logIn(event) {
     url = "http://127.0.0.1:5000/api?function=login";
     
     // get values from form
-    for(var element of event.srcElement) {
+    for(let element of event.srcElement) {
         if(element.type != "submit") {
             url += `&${element.name}=${element.value}`
         }

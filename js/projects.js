@@ -4,11 +4,11 @@ function onLoad() {
     const query = window.location.search;
     const params = new URLSearchParams(query);
 
-    var week = params.get("week");
-    var title = params.get("title");
+    let week = params.get("week");
+    let title = params.get("title");
 
     // set title
-    var element = document.getElementsByTagName("h1");
+    let element = document.getElementsByTagName("h1");
     element = document.getElementsByTagName("h1")[0].innerText = `${String(week).charAt(0).toUpperCase() + String(week).slice(1)}: ${title}`;
 
     showProjects(week);
@@ -17,7 +17,7 @@ function onLoad() {
 // show projects function
 async function showProjects(week) {
     url = `http://127.0.0.1:5000/api?function=show-projects&week=${week}`;
-    var fileName = "";
+    let fileName = "";
 
     // set file name base on weeks
     switch(week) {
